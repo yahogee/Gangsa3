@@ -19,21 +19,34 @@ h1,h2,h3,p,a,summary,strong,small{word-break:keep-all}
 .program-feature{background:var(--paper);border-color:var(--line)}
 .program-feature .program-meta{color:var(--muted)}
 .program-feature p{color:var(--muted)}
+.program-card h3{margin-top:30px}
+.program-card p{font-size:14px}
 .proof{background:var(--blue);color:var(--paper)}
 .proof .eyebrow{color:#e5eee8}
 .proof .section-intro h2 em{color:var(--lime)}
 .case-card{background:rgba(245,242,236,.08);border-color:rgba(245,242,236,.34)}
+.case-card h3{margin-top:32px}
+.case-row p{font-size:13px}
 .case-label,.case-row span{color:var(--lime)}
 .case-row{border-color:rgba(245,242,236,.24)}
 .case-row p{color:#e3ebe5}
 .case-outcome{background:var(--lime);color:#25312b}
-.trust-main img{object-fit:contain;background:var(--paper);mix-blend-mode:normal}
-.about-photo img{object-fit:contain;object-position:center bottom;background:var(--cream)}
-.cta{background:var(--soft-orange)}
+.trust-main img{object-fit:contain;background:transparent;mix-blend-mode:multiply;filter:grayscale(1) contrast(1.2);}
+.about-photo img{object-fit:contain;object-position:center bottom;background:transparent;filter:none}
+.cta{background:#c9cadd}
 .cta .eyebrow{color:#64473d}
 .button-light{background:var(--soft-green)}
 .button-light:hover{background:#f7f2e5}
+.contact-info{flex-direction:column;align-items:center;gap:8px;font:600 14px 'Manrope','Noto Sans KR',sans-serif;letter-spacing:.02em}
+.contact-info a{text-decoration:none}
 .resource-link strong{word-break:keep-all}
+
+/* 소개 전문을 클릭한 자리 아래에서 부드럽게 펼치고 접습니다. */
+.about-toggle{background:none;border:0;font:inherit;cursor:pointer;color:inherit}
+.about-story{max-height:0;overflow:hidden;opacity:0;transition:max-height .7s ease,opacity .35s ease,margin-top .7s ease;border-top:1px solid transparent}
+.about-story.is-open{max-height:2400px;opacity:1;margin-top:75px;border-top-color:var(--line)}
+.about-story .article-block{padding-top:35px}
+.about-story .article-signature{margin-bottom:0}
 
 /* 강사 소개 전문 페이지의 읽기 흐름과 모바일 여백을 정의합니다. */
 .article-page{background:var(--paper)}
