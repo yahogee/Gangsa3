@@ -1,0 +1,54 @@
+/* 색상과 줄바꿈을 한 곳에서 조정해 전체 페이지의 시각적 일관성을 유지합니다. */
+:root{--lime:#d9e7b1;--orange:#d98b70;--blue:#6b847d;--soft-green:#dfe9cf;--soft-blue:#dce5e0;--soft-orange:#dda08a}
+body{word-break:keep-all;overflow-wrap:break-word}
+h1,h2,h3,p,a,summary,strong,small{word-break:keep-all}
+.site-header{font-size:13px;letter-spacing:.09em}
+.desktop-nav{gap:44px;font-size:13px}
+.header-cta{font-size:13px;padding:12px 18px}
+.hero h1,.section-intro h2,.method-heading h2,.trust-heading h2,.about-copy h2,.cta h2{line-height:1.18}
+.hero-display{line-height:1.16}
+.hero-summary{line-height:1.8}
+.note-top{top:76px;left:-48px;right:auto}
+.marquee{background:var(--soft-green);color:#33433b}
+.marquee span{color:var(--orange)}
+.why{grid-template-columns:.92fr 1.08fr;gap:72px}
+.why .section-intro{padding-right:25px}
+.why-content{padding-top:18px}
+.lead{line-height:1.9}
+.method-heading h2,.section-intro h2{line-height:1.24}
+.program-feature{background:var(--paper);border-color:var(--line)}
+.program-feature .program-meta{color:var(--muted)}
+.program-feature p{color:var(--muted)}
+.proof{background:var(--blue);color:var(--paper)}
+.proof .eyebrow{color:#e5eee8}
+.proof .section-intro h2 em{color:var(--lime)}
+.case-card{background:rgba(245,242,236,.08);border-color:rgba(245,242,236,.34)}
+.case-label,.case-row span{color:var(--lime)}
+.case-row{border-color:rgba(245,242,236,.24)}
+.case-row p{color:#e3ebe5}
+.case-outcome{background:var(--lime);color:#25312b}
+.trust-main img{object-fit:contain;background:var(--paper);mix-blend-mode:normal}
+.about-photo img{object-fit:contain;object-position:center bottom;background:var(--cream)}
+.cta{background:var(--soft-orange)}
+.cta .eyebrow{color:#64473d}
+.button-light{background:var(--soft-green)}
+.button-light:hover{background:#f7f2e5}
+.resource-link strong{word-break:keep-all}
+
+/* 강사 소개 전문 페이지의 읽기 흐름과 모바일 여백을 정의합니다. */
+.article-page{background:var(--paper)}
+.article-main{padding:110px 0 140px}
+.article-shell{width:min(920px,calc(100% - 64px));margin:auto}
+.article-kicker{font:500 11px 'DM Mono',monospace;letter-spacing:.12em;color:var(--orange);margin:0 0 30px}
+.article-main h1{font-size:clamp(46px,7vw,86px);line-height:1.15;letter-spacing:-.08em;margin:0 0 65px}
+.article-main h1 em{font-style:normal;color:var(--orange)}
+.article-lead{font-size:clamp(20px,2.5vw,28px);line-height:1.8;border-left:3px solid var(--orange);padding-left:25px;margin:0 0 90px}
+.article-block{display:grid;grid-template-columns:180px 1fr;gap:55px;border-top:1px solid var(--line);padding:35px 0 60px}
+.article-block h2{font-size:20px;line-height:1.5;margin:0;letter-spacing:-.05em}
+.article-block p{font-size:16px;line-height:2;margin:0 0 22px;color:#5d5952}
+.article-block blockquote{font-size:clamp(25px,3.4vw,42px);line-height:1.4;letter-spacing:-.06em;color:var(--ink);margin:0 0 28px;padding:0}
+.article-signature{background:var(--ink);color:var(--paper);padding:50px 55px;margin-top:15px}
+.article-signature p{color:#d6d2c9}
+.article-signature strong{font-size:23px;color:var(--lime)}
+@media(max-width:850px){.desktop-nav{gap:20px}.why{grid-template-columns:1fr;gap:40px}.why .section-intro{padding-right:0}.note-top{left:-12px;top:52px}.article-main{padding-top:75px}.article-block{grid-template-columns:1fr;gap:18px;padding-bottom:42px}.article-shell{width:min(100% - 36px,620px)}.article-signature{padding:35px 25px}}
+@media(max-width:480px){.site-header{font-size:11px}.desktop-nav{display:none}.header-cta{font-size:11px}.note-top{left:-4px;top:38px}.hero h1,.section-intro h2,.method-heading h2,.trust-heading h2,.about-copy h2,.cta h2{line-height:1.25}.about-photo img{height:460px}.article-main h1{font-size:47px}.article-lead{font-size:18px;padding-left:18px}}
