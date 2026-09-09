@@ -1,0 +1,63 @@
+# 검색엔진 봇: 일반 검색 결과에 사이트가 노출되도록 허용합니다.
+User-agent: Googlebot
+Allow: /
+User-agent: Yeti
+Allow: /
+User-agent: Daumoa
+Allow: /
+User-agent: bingbot
+Allow: /
+User-agent: DuckDuckBot
+Allow: /
+User-agent: Applebot
+Allow: /
+
+# 상용 AI 검색 · 인용 봇: AI 답변에서 사이트가 검색되고 인용되도록 허용합니다.
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+User-agent: MistralAI-User
+Allow: /
+User-agent: Amazonbot
+Allow: /
+
+# AI 학습 봇: 기본적으로 학습 접근을 허용합니다. 차단하려면 각 Allow를 Disallow: /로 바꾸세요.
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: meta-externalagent
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: cohere-ai
+Allow: /
+User-agent: Diffbot
+Allow: /
+User-agent: Webzio-Extended
+Allow: /
+User-agent: ImagesiftBot
+Allow: /
+User-agent: Timpibot
+Allow: /
+
+# 전체 기본 규칙: 위에 명시되지 않은 봇도 공개 페이지를 읽을 수 있습니다.
+User-agent: *
+Allow: /
+
+Sitemap: https://yahosam.vercel.app/sitemap.xml

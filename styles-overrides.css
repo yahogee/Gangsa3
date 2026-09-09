@@ -65,5 +65,29 @@ h1,h2,h3,p,a,summary,strong,small{word-break:keep-all}
 .article-signature{background:var(--ink);color:var(--paper);padding:50px 55px;margin-top:15px}
 .article-signature p{color:#d6d2c9}
 .article-signature strong{font-size:23px;color:var(--lime)}
+.contact-form{max-width:760px;margin:42px auto 0;text-align:left;color:var(--ink)}
+.contact-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.contact-form label{display:flex;flex-direction:column;gap:7px;font-size:12px;font-weight:700}
+.contact-form label>span{color:#b3291d}
+.contact-form input,.contact-form select,.contact-form textarea{width:100%;border:1px solid rgba(17,17,15,.35);border-radius:2px;background:#fff;color:var(--ink);font:inherit;padding:12px 13px;outline:none}
+.contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{border-color:var(--blue);box-shadow:0 0 0 2px rgba(35,59,255,.16)}
+.contact-form textarea{resize:vertical;min-height:132px}
+.contact-form-full{grid-column:1/-1}
+.privacy-area{margin-top:22px;padding-top:18px;border-top:1px solid rgba(17,17,15,.24)}
+.privacy-check{display:inline-flex!important;flex-direction:row!important;align-items:center;gap:8px!important;font-weight:700!important}
+.privacy-check input{width:17px;height:17px;accent-color:var(--blue)}
+.privacy-detail-toggle{margin-left:12px;border:0;border-bottom:1px solid currentColor;background:transparent;color:inherit;font:inherit;font-size:12px;cursor:pointer;padding:0}
+.privacy-detail{margin-top:14px;background:rgba(255,255,255,.7);padding:12px;overflow-x:auto}
+.privacy-detail table{width:100%;border-collapse:collapse;font-size:12px}
+.privacy-detail th,.privacy-detail td{border:1px solid rgba(17,17,15,.18);padding:9px;text-align:left;vertical-align:top}
+.privacy-detail th{width:30%;background:rgba(245,242,236,.9)}
+.form-status{min-height:24px;margin:16px 0 8px;text-align:center;font-size:13px;font-weight:700}
+.form-status.is-loading{color:#5d5952}.form-status.is-success{color:#174c2a}.form-status.is-error{color:#8e221a}
+.form-submit{border:0;cursor:pointer;margin:0 auto}.form-submit:disabled{cursor:not-allowed;opacity:.48;transform:none}
 @media(max-width:850px){.desktop-nav{gap:20px}.why{grid-template-columns:1fr;gap:40px}.why .section-intro{padding-right:0}.note-top{left:-12px;top:96px}.article-main{padding-top:75px}.article-block{grid-template-columns:1fr;gap:18px;padding-bottom:42px}.article-shell{width:min(100% - 36px,620px)}.article-signature{padding:35px 25px}}
+@media(max-width:600px){.contact-form-grid{grid-template-columns:1fr}.contact-form-full{grid-column:auto}.privacy-check{align-items:flex-start!important}.privacy-detail-toggle{display:inline-block;margin-top:10px;margin-left:25px}}
+@media(max-width:850px){.company-brand{margin-left:-6px;padding-left:6px}.company-brand strong{font-size:10px}.company-brand small{font-size:7px}.site-header{gap:8px}.site-header>.brand{display:none}.company-footer strong{font-size:10px}}
 @media(max-width:480px){.site-header{font-size:11px}.desktop-nav{display:none}.header-cta{font-size:11px}.note-top{left:-4px;top:74px}.hero h1,.section-intro h2,.method-heading h2,.trust-heading h2,.about-copy h2,.cta h2{line-height:1.25}.about-photo img{height:460px}.portrait-frame img{object-fit:contain}.article-main h1{font-size:47px}.article-lead{font-size:18px;padding-left:18px}}
+.site-header{position:sticky;top:0;z-index:20;background:rgba(245,242,236,.96);backdrop-filter:blur(8px)}
+.company-brand,.company-footer{display:flex;align-items:center;gap:9px;border-radius:4px;transition:background .2s ease}.company-brand{padding:8px 10px;margin-left:-10px}.company-brand:hover,.company-footer:hover{background:rgba(216,240,75,.42)}
+.company-brand img,.company-footer img{width:auto;height:24px;object-fit:contain}.company-brand span,.company-footer span{display:flex;flex-direction:column;line-height:1.15}.company-brand strong,.company-footer strong{font-family:'Noto Sans KR','Manrope',sans-serif;font-size:12px;letter-spacing:-.04em}.company-brand small,.company-footer small{font:8px 'DM Mono',monospace;letter-spacing:.05em;color:var(--muted);white-space:nowrap}.company-footer{padding:5px 8px;margin-left:-8px}.company-footer strong{font-size:11px}.company-footer small{font-size:9px;margin-top:3px}

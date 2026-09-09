@@ -1,0 +1,9 @@
+# 야호샘
+> 바이브코딩 전문 AI 강사
+
+## 핵심 페이지
+- [홈](https://yahosam.vercel.app/): AI와 Vibe Coding 교육 프로그램, 교육 방식, 문의 안내
+- [강사 소개](https://yahosam.vercel.app/about.html): 야호샘의 경력과 교육 철학 소개
+
+## 문의
+홈페이지 문의 폼으로 이름, 이메일, 연락처, 소속, 문의 유형과 문의 내용을 보내 문의할 수 있습니다. 문의 접수 메일: yahogee41@gmail.com

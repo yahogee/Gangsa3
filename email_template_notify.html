@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+  <body style="margin:0;padding:0;background:#f5f2ec;color:#11110f;font-family:Arial,'Malgun Gothic',sans-serif;line-height:1.6;">
+    <div style="width:100%;padding:32px 12px;box-sizing:border-box;">
+      <div style="max-width:680px;margin:0 auto;background:#ffffff;border:1px solid #d9d4ca;">
+        <div style="padding:24px 28px;background:#11110f;color:#f5f2ec;">
+          <p style="margin:0 0 8px;font-size:12px;letter-spacing:.08em;color:#d8f04b;">YAHOSAM · NEW INQUIRY</p>
+          <h1 style="margin:0;font-size:24px;line-height:1.3;">새 문의가 접수되었습니다</h1>
+        </div>
+        <div style="padding:28px;">
+          <table role="presentation" style="width:100%;border-collapse:collapse;font-size:14px;">
+            <tr><th style="width:130px;padding:12px 10px;text-align:left;border-bottom:1px solid #d9d4ca;background:#f5f2ec;">이름</th><td style="padding:12px 10px;border-bottom:1px solid #d9d4ca;">{{from_name}}</td></tr>
+            <tr><th style="padding:12px 10px;text-align:left;border-bottom:1px solid #d9d4ca;background:#f5f2ec;">이메일</th><td style="padding:12px 10px;border-bottom:1px solid #d9d4ca;"><a href="mailto:{{from_email}}" style="color:#233bff;">{{from_email}}</a></td></tr>
+            <tr><th style="padding:12px 10px;text-align:left;border-bottom:1px solid #d9d4ca;background:#f5f2ec;">연락처</th><td style="padding:12px 10px;border-bottom:1px solid #d9d4ca;">{{phone}}</td></tr>
+            <tr><th style="padding:12px 10px;text-align:left;border-bottom:1px solid #d9d4ca;background:#f5f2ec;">소속</th><td style="padding:12px 10px;border-bottom:1px solid #d9d4ca;">{{company}}</td></tr>
+            <tr><th style="padding:12px 10px;text-align:left;border-bottom:1px solid #d9d4ca;background:#f5f2ec;">문의 유형</th><td style="padding:12px 10px;border-bottom:1px solid #d9d4ca;">{{inquiry_type}}</td></tr>
+            <tr><th style="padding:12px 10px;text-align:left;border-bottom:1px solid #d9d4ca;background:#f5f2ec;">문의 내용</th><td style="padding:12px 10px;border-bottom:1px solid #d9d4ca;white-space:pre-wrap;">{{message}}</td></tr>
+          </table>
+          <p style="margin:24px 0 12px;"><a href="mailto:{{reply_to}}?subject=문의 답변" style="display:inline-block;padding:12px 18px;background:#233bff;color:#ffffff;text-decoration:none;">문의자에게 회신하기</a></p>
+          <table role="presentation" style="width:100%;border-collapse:collapse;font-size:13px;color:#55514a;">
+            <tr><td style="padding:6px 0;">접수 시각</td><td style="padding:6px 0;">{{submitted_at}}</td></tr>
+            <tr><td style="padding:6px 0;">유입 페이지</td><td style="padding:6px 0;word-break:break-all;">{{page_url}}</td></tr>
+            <tr><td style="padding:6px 0;">개인정보 동의</td><td style="padding:6px 0;">{{privacy_agreed}}</td></tr>
+            <tr><td style="padding:6px 0;">동의 시각</td><td style="padding:6px 0;">{{agreed_at}}</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
