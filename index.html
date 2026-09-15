@@ -3,25 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="바이브코딩 전문 AI 강사 야호샘" />
+    <meta name="description" content="바이브코딩 전문 AI 강사 정순오(야호샘)" />
     <meta name="keywords" content="AI, Vibe Coding" />
     <link rel="canonical" href="https://yahosam.vercel.app/" />
-    <meta property="og:title" content="야호샘 | 바이브코딩 전문 AI 강사" />
-    <meta property="og:description" content="바이브코딩 전문 AI 강사 야호샘" />
+    <meta property="og:title" content="정순오(야호샘) | 바이브코딩 전문 AI 강사" />
+    <meta property="og:description" content="바이브코딩 전문 AI 강사 정순오(야호샘)" />
     <meta property="og:url" content="https://yahosam.vercel.app/" />
     <meta property="og:image" content="https://yahosam.vercel.app/%EA%B0%95%EC%82%AC%20%ED%94%84%EB%A1%9C%ED%95%84-%EC%A0%95%EC%88%9C%EC%98%A4.png" />
     <meta property="og:type" content="website" />
-    <title>야호샘 | 바이브코딩 전문 AI 강사</title>
+    <title>정순오(야호샘) | 바이브코딩 전문 AI 강사</title>
+    <!-- Person 구조화 데이터: 검색엔진/AI가 사이트 운영자(정순오)를 식별하는 데 사용. @id는 아래 Course 스키마의 provider가 이 Person을 참조하기 위한 고유 식별자 -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
-        "name": "야호샘",
+        "@id": "https://yahosam.vercel.app/#person",
+        "name": "정순오(야호샘)",
         "jobTitle": "바이브코딩 전문 AI 강사",
         "description": "바이브코딩 전문 AI 강사",
         "keywords": ["AI", "Vibe Coding"],
         "url": "https://yahosam.vercel.app/",
         "sameAs": ["https://hanconyeon.com/"]
+      }
+    </script>
+    <!--
+      Course 구조화 데이터: PROGRAMS 섹션(#programs)의 프로그램 카드 3개를 각각 강좌(Course)로 인식시키기 위한 스키마.
+      provider는 위 Person 스키마를 @id로 참조(중복 입력 없이 동일 인물임을 명시).
+      현재는 과정별 개별 페이지가 없어 url을 전부 #programs로 통일함 — 추후 개별 페이지(예: course-adult.html)가
+      생기면 이 3개 스키마의 url을 각 페이지 주소로 분리할 것.
+    -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": "성인 대상 실전 AI 바이브 코딩 & 수익화",
+        "description": "AI와 대화하듯 코딩하는 Vibe Coding의 기초부터 실무 자동화 도구 제작, 포트폴리오, 부업·창업 연계까지 진행합니다.",
+        "provider": { "@type": "Person", "@id": "https://yahosam.vercel.app/#person" },
+        "url": "https://yahosam.vercel.app/#programs"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": "생성형 AI & 디지털 리터러시",
+        "description": "ChatGPT와 이미지·영상 생성 도구를 활용하여 업무 효율화와 비즈니스 콘텐츠 제작 방법을 익힙니다.",
+        "provider": { "@type": "Person", "@id": "https://yahosam.vercel.app/#person" },
+        "audience": { "@type": "Audience", "audienceType": "기업 임직원 · 마케터 · 일반 성인 학습자" },
+        "url": "https://yahosam.vercel.app/#programs"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": "미래 인재를 위한 SW & 로봇 융합 코딩",
+        "description": "오랜 교육 현장 경험을 기반으로 초·중·고 및 대학생을 위한 맞춤형 SW·AI·로봇 교육을 제공합니다.",
+        "provider": { "@type": "Person", "@id": "https://yahosam.vercel.app/#person" },
+        "audience": { "@type": "Audience", "audienceType": "학교 · 대학 · 청소년센터 · 공공교육기관" },
+        "url": "https://yahosam.vercel.app/#programs"
       }
     </script>
     <link rel="stylesheet" href="styles.css" />
@@ -47,7 +87,7 @@
     <main id="top">
       <section class="hero section-shell">
         <div class="hero-copy reveal">
-          <p class="eyebrow"><span class="eyebrow-dot"></span> AI EDUCATION / VIBE CODING</p>
+          <p class="eyebrow"><span class="eyebrow-dot"></span> AI 강사 정순오 · VIBE CODING</p>
           <h1>AI 시대 갓생과<br /><em>현실 생존의 기술</em></h1>
           <p class="hero-display">손에 잡히는<br /><strong>AI 바이브 코딩</strong></p>
           <p class="hero-summary">복잡한 IT 개념을 눈앞의 현실 세계로 치환합니다.<br />어려운 이론 대신 직접 만들고, 실무와 수익으로 연결합니다.</p>
