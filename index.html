@@ -23,7 +23,12 @@
         "description": "바이브코딩 전문 AI 강사",
         "keywords": ["AI", "Vibe Coding"],
         "url": "https://yahosam.vercel.app/",
-        "sameAs": ["https://hanconyeon.com/"]
+        "sameAs": ["https://hanconyeon.com/"],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "한국AI콘텐츠연구소",
+          "url": "https://hanconyeon.com/"
+        }
       }
     </script>
     <!--
@@ -62,6 +67,55 @@
         "provider": { "@type": "Person", "@id": "https://yahosam.vercel.app/#person" },
         "audience": { "@type": "Audience", "audienceType": "학교 · 대학 · 청소년센터 · 공공교육기관" },
         "url": "https://yahosam.vercel.app/#programs"
+      }
+    </script>
+    <!-- FAQPage 구조화 데이터: 화면의 FAQ 섹션(09 / FAQ, <details> 5개)과 동일한 질문·답변을 AI/검색엔진이 읽을 수 있도록 스키마로도 제공 -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "코딩을 한 번도 해보지 않은 사람도 가능한가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "네. 비전공자와 초보자를 기준으로 전문 용어와 개념을 일상적인 비유로 설명하고, 이해한 내용을 바로 실습으로 연결합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "기관에 맞춰 커리큘럼을 변경할 수 있나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "가능합니다. 교육 목적, 학습자 수준, 교육 시간과 인원에 맞춰 특강형 또는 다회차 과정으로 구성합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "실습을 위해 별도의 개발 프로그램을 설치해야 하나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "교육 과정에 따라 다르지만, 브라우저 기반 AI 도구를 중심으로 진행해 복잡한 개발 환경 설치를 최소화할 수 있습니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "대구·경북 외 지역도 출강 가능한가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "전국 출강 및 온·오프라인 교육이 가능합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "기업이나 기관의 특정 업무에 맞춘 교육도 가능한가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "교육 목적과 업무 환경을 사전에 확인한 후 맞춤형 커리큘럼으로 구성할 수 있습니다."
+            }
+          }
+        ]
       }
     </script>
     <link rel="stylesheet" href="styles.css" />
@@ -140,7 +194,7 @@
           <article class="program-card reveal"><div class="program-meta"><span>PROGRAM 02</span></div><h3>생성형 AI &<br />디지털 리터러시</h3><p>ChatGPT와 이미지·영상 생성 도구를 활용하여 업무 효율화와 비즈니스 콘텐츠 제작 방법을 익힙니다.</p><div class="program-result"><span>대상</span><strong>기업 임직원 · 마케터 · 일반 성인 학습자</strong></div></article>
           <article class="program-card reveal"><div class="program-meta"><span>PROGRAM 03</span></div><h3>미래 인재를 위한<br />SW & 로봇 융합 코딩</h3><p>오랜 교육 현장 경험을 기반으로 초·중·고 및 대학생을 위한 맞춤형 SW·AI·로봇 교육을 제공합니다.</p><div class="program-result"><span>대상</span><strong>학교 · 대학 · 청소년센터 · 공공교육기관</strong></div></article>
         </div>
-        <p class="program-footnote">강의의 형태보다 중요한 것은 교육의 목적입니다. 특강, 워크숍, 다회차 교육까지 목적과 일정에 맞춰 설계합니다.</p>
+        <p class="program-footnote">강의의 형태보다 중요한 것은 교육의 목적입니다. 특강, 워크숍, 다회차 교육까지 상시 모집·수시 진행으로, 목적과 일정에 맞춰 설계합니다.</p>
       </section>
 
       <section class="proof section-pad" id="proof"><div class="section-shell"><div class="section-intro light reveal"><p class="eyebrow">05 / PROOF</p><h2>배우는 순간부터<br /><em>결과물이 시작됩니다.</em></h2></div><div class="case-list">
