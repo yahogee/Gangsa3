@@ -41,8 +41,8 @@
     <!--
       Course 구조화 데이터: PROGRAMS 섹션(#programs)의 프로그램 카드 3개를 각각 강좌(Course)로 인식시키기 위한 스키마.
       provider는 위 Person 스키마를 @id로 참조(중복 입력 없이 동일 인물임을 명시).
-      현재는 과정별 개별 페이지가 없어 url을 전부 #programs로 통일함 — 추후 개별 페이지(예: course-adult.html)가
-      생기면 이 3개 스키마의 url을 각 페이지 주소로 분리할 것.
+      PROGRAM 01(성인 대상)은 개별 페이지(course-adult.html)가 생겨 url을 그쪽으로 분리함.
+      PROGRAM 02·03은 아직 개별 페이지가 없어 url을 #programs로 유지 — 페이지가 생기면 그때 각각 분리할 것.
     -->
     <script type="application/ld+json">
       {
@@ -51,7 +51,7 @@
         "name": "성인 대상 실전 AI 바이브 코딩 & 수익화",
         "description": "AI와 대화하듯 코딩하는 Vibe Coding의 기초부터 실무 자동화 도구 제작, 포트폴리오, 부업·창업 연계까지 진행합니다.",
         "provider": { "@type": "Person", "@id": "https://yahosam.vercel.app/#person" },
-        "url": "https://yahosam.vercel.app/#programs"
+        "url": "https://yahosam.vercel.app/course-adult.html"
       }
     </script>
     <script type="application/ld+json">
@@ -197,7 +197,7 @@
       <section class="section-shell section-pad programs" id="programs">
         <div class="section-intro reveal"><p class="eyebrow">04 / PROGRAMS</p><h2>목적에 따라 선택하는<br /><em>실전 AI 교육 프로그램</em></h2></div>
         <div class="program-list">
-          <article class="program-card program-feature reveal"><div class="program-meta"><span>PROGRAM 01</span><span class="program-tag">MAIN</span></div><h3>성인 대상 실전 AI<br />바이브 코딩 & 수익화</h3><p>AI와 대화하듯 코딩하는 Vibe Coding의 기초부터 실무 자동화 도구 제작, 포트폴리오, 부업·창업 연계까지 진행합니다.</p><div class="program-result"><span>결과물</span><strong>웹 애플리케이션 · 자동화 도구 · 아이디어 프로토타입</strong></div></article>
+          <article class="program-card program-feature reveal"><div class="program-meta"><span>PROGRAM 01</span><span class="program-tag">MAIN</span></div><h3>성인 대상 실전 AI<br />바이브 코딩 & 수익화</h3><p>AI와 대화하듯 코딩하는 Vibe Coding의 기초부터 실무 자동화 도구 제작, 포트폴리오, 부업·창업 연계까지 진행합니다.</p><div class="program-result"><span>결과물</span><strong>웹 애플리케이션 · 자동화 도구 · 아이디어 프로토타입</strong></div><a class="text-link" href="course-adult.html">자세히 보기 <span>↗</span></a></article>
           <article class="program-card reveal"><div class="program-meta"><span>PROGRAM 02</span></div><h3>생성형 AI &<br />디지털 리터러시</h3><p>ChatGPT와 이미지·영상 생성 도구를 활용하여 업무 효율화와 비즈니스 콘텐츠 제작 방법을 익힙니다.</p><div class="program-result"><span>대상</span><strong>기업 임직원 · 마케터 · 일반 성인 학습자</strong></div></article>
           <article class="program-card reveal"><div class="program-meta"><span>PROGRAM 03</span></div><h3>미래 인재를 위한<br />SW & 로봇 융합 코딩</h3><p>오랜 교육 현장 경험을 기반으로 초·중·고 및 대학생을 위한 맞춤형 SW·AI·로봇 교육을 제공합니다.</p><div class="program-result"><span>대상</span><strong>학교 · 대학 · 청소년센터 · 공공교육기관</strong></div></article>
         </div>

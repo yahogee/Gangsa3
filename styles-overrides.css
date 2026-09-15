@@ -44,6 +44,11 @@ h1,h2,h3,p,a,summary,strong,small{word-break:keep-all}
 .contact-info a{text-decoration:none}
 .resource-link strong{word-break:keep-all}
 
+/* 과정별 개별 페이지(예: course-adult.html)의 커리큘럼/목표 목록을 본문 단락과 어울리는 스타일로 정리 */
+.article-block ul{margin:0 0 22px;padding-left:20px;color:#5d5952;font-size:16px;line-height:1.9}
+.article-block ul li{margin-bottom:8px}
+.article-block ul li::marker{color:var(--orange)}
+
 /* 소개 전문을 클릭한 자리 아래에서 부드럽게 펼치고 접습니다. */
 .about-toggle{background:none;border:0;font:inherit;cursor:pointer;color:inherit}
 .about-story{max-height:0;overflow:hidden;opacity:0;transition:max-height .7s ease,opacity .35s ease,margin-top .7s ease;border-top:1px solid transparent}
