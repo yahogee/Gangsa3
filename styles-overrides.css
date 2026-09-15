@@ -34,6 +34,7 @@ h1,h2,h3,p,a,summary,strong,small{word-break:keep-all}
 .case-row p{color:#e3ebe5}
 .case-outcome{background:var(--lime);color:#25312b}
 .trust-main img{object-fit:contain;background:transparent;mix-blend-mode:multiply;filter:grayscale(1) contrast(1.2);}
+.trust-stats{margin-top:20px}
 .about-photo img{object-fit:contain;object-position:center bottom;background:var(--cream);filter:none}
 .cta{background:#c9cadd}
 .cta .eyebrow{color:#64473d}
